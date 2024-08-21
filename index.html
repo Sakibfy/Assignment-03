@@ -1,18 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assignment-3</title>
   <link rel="stylesheet" href="./style/style.css">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <!-- tailwind and daisy ui CDN -->
+  <!-- boxicon cdn-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- fontasome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'Green': '#ABEF5F',
+            'Green2': 'rgba(171, 239, 95, 50%);',
+            'discription': '#494949',
+          }
+        }
+      }
+    }
+  </script>
 </head>
+<style>
+  .manrope_font {
+    font-family: "Manrope", system-ui;
+  }
 
-<body>
-  <header></header>
+  .body_bg {
+    background-color: #f5f5f5;
+  }
+</style>
+
+
+<body class="manrope_font  body_bg">
+  <header class="w-10/12 mx-auto mb-8 lg:mb-20">
+    <!-- navbar arae -->
+    <div class="navbar justify-between">
+      <div class="navbar-start mt-4">
+        <div class="dropdown ">
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 w-52 p-2 ">
+            <li><a class="text-gray-500">Home</a></li>
+            <li><a class="text-gray-500">Services</a></li>
+            <li><a class="text-gray-500">Portfolio</a></li>
+            <li><a class="text-gray-500">Blogs</a></li>
+            <li><a class="text-gray-500">Contact us</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-3xl font-bold text-black"><i
+            class='bx bx-right-arrow-alt bg-Green py-1 px-1 rounded-full -rotate-45'></i>
+          Rinterio</a>
+      </div>
+      <div class="navbar-center hidden lg:flex mr-24">
+        <ul class="menu menu-horizontal px-1">
+          <li><a class="text-gray-900">Home</a></li>
+          <li><a class="text-gray-500">Services</a></li>
+          <li><a class="text-gray-500">Portfolio</a></li>
+          <li><a class="text-gray-500">Blogs</a></li>
+          <li><a class="text-gray-500">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end sm:hidden md:block">
+        <i
+          class='bx bx-search-alt-2 pr-2 py-1 text-gray-400 text-2xl bg-white rounded-full border pl-2 shadow shadow-gray-200'></i>
+        <i
+          class="fa-solid fa-cart-shopping  text-gray-400 text-2xl bg-white rounded-full border px-2 mx-3 py-1 shadow shadow-gray-200"></i>
+        <a class="btn btn-error bg-Green border-2 border-Green rounded-full text-black font-semibold">Book Consult <i
+            class='bx bx-right-arrow-alt bg-black text-white py-1 px-1 rounded-full -rotate-45'></i></a>
+      </div>
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </div>
+    </div>
+    <!-- header img -->
+    <div class=" lg:mt-10">
+      <div class="lg:items-center lg:flex lg:justify-center">
+        <img src="./assets/banner.png" alt="">
+      </div>
+      <div class="space-y-6 lg:text-center text-center ml-4 w-11/12 lg:mx-auto lg:justify-center">
+        <h1 class="text-5xl lg:text-6xl font-extrabold text-black lg:ml-4">A barn house of this design has a
+          striking
+          <span class="ml-24 lg:ml-0">appearance</span>
+        </h1>
+        <p class="text-xl text-discription leading-8 ml-10">The barn house captivates with its blend of rustic
+          charm
+          and
+          modern
+          sophistication,
+          featuring weathered wood,
+          sleek
+          metal accents, and large windows that flood the space with natural light.</p>
+        <a
+          class="btn  bg-Green2 border-2 border-Green2 rounded-full text-black font-semibold text-xl w-11/12 lg:w-64 ml-3">View
+          Details <i class='bx bx-right-arrow-alt bg-Green text-black py-1 px-1 rounded-full -rotate-45'></i></a>
+      </div>
+    </div>
+  </header>
   <main></main>
   <footer></footer>
 </body>
